@@ -4,9 +4,9 @@ pipeline {
 
     agent {
         docker {
-            //image 'node'
+            image 'node'
             //args '-u root'
-            image 'node:14'
+            //image 'node:14'
             args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
